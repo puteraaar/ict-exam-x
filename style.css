@@ -1,0 +1,9 @@
+@media (max-width: 767px) {
+    .sidemenu-dekstop {
+        display: none;
+    }
+}
+
+* {
+    scroll-behavior: smooth;
+}

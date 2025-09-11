@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guideline Ujian Praktik ICT - PSTS</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-sky-50">
+    <div class="flex flex-col md:flex-row">
+        <aside class="w-86 bg-white shadow-lg flex-col fixed h-full z-10 hidden md:flex sidemenu-dekstop">
+            <div class="p-6 border-b border-gray-200">
+                <h1 class="text-2xl font-bold text-sky-900">ICT Practical Exam</h1>
+            </div>
+
+            <div class="px-6 pt-4 pb-0 flex justify-center">
+                <a href="exam.html" class="flex items-center w-full text-center py-3 px-4 rounded-sm font-bold text-white bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-colors duration-300">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" /></svg>
+                    <span class="ms-2">Mulai Ujian</span>
+                </a>
+            </div>
+
+            <nav class="flex-1 overflow-y-auto p-4">
+                <ul class="space-y-2">
+                    <li>
+                        <a href="#overview" class="flex items-center p-3 text-gray-700 hover:bg-gray-200 rounded-sm transition-colors duration-300">
+                            <!-- icons -->
+                            <div class="text-blue-600">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-layout-dashboard"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1" /><path d="M5 16h4a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1" /><path d="M15 12h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1" /><path d="M15 4h4a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1" /></svg>
+                            </div>
+                            <span class="text-sm ms-2">Overview</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#mekanisme" class="flex items-center p-3 text-gray-700 hover:bg-gray-200 rounded-sm transition-colors duration-300">
+                            <!-- icons -->
+                            <div class="text-blue-600">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-settings-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11.445 20.913a1.665 1.665 0 0 1 -1.12 -1.23a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.31 .318 1.643 1.79 .997 2.694" /><path d="M15 19l2 2l4 -4" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
+                            </div>
+                            <span class="text-sm ms-2">Mekanisme Ujian</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#ketentuan-file" class="flex items-center p-3 text-gray-700 hover:bg-gray-200 rounded-sm transition-colors duration-300">
+                            <!-- icons -->
+                            <div class="text-blue-600">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-code"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M10 13l-1 2l1 2" /><path d="M14 13l1 2l-1 2" /></svg>
+                            </div>
+                            <span class="text-sm ms-2">Ketentuan File</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#persiapan-ujian" class="flex items-center p-3 text-gray-700 hover:bg-gray-200 rounded-sm transition-colors duration-300">
+                            <!-- icons -->
+                            <div class="text-blue-600">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-devices"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 9a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1v-10z" /><path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9" /><path d="M16 9h2" /></svg>
+                            </div>
+                            <span class="text-sm ms-2">Persiapan Ujian Siswa</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tata-tertib" class="flex items-center p-3 text-gray-700 hover:bg-gray-200 rounded-sm transition-colors duration-300">
+                            <!-- icons -->
+                            <div class="text-blue-600">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-gavel"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 10l7.383 7.418c.823 .82 .823 2.148 0 2.967a2.11 2.11 0 0 1 -2.976 0l-7.407 -7.385" /><path d="M6 9l4 4" /><path d="M13 10l-4 -4" /><path d="M3 21h7" /><path d="M6.793 15.793l-3.586 -3.586a1 1 0 0 1 0 -1.414l2.293 -2.293l.5 .5l3 -3l-.5 -.5l2.293 -2.293a1 1 0 0 1 1.414 0l3.586 3.586a1 1 0 0 1 0 1.414l-2.293 2.293l-.5 -.5l-3 3l.5 .5l-2.293 2.293a1 1 0 0 1 -1.414 0z" /></svg>
+                            </div>
+                            <span class="text-sm ms-2">Tata Tertib Siswa</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#penilaian" class="flex items-center p-3 text-gray-700 hover:bg-gray-200 rounded-sm transition-colors duration-300">
+                            <!-- icons -->
+                            <div class="text-blue-600">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-carambola"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17.286 21.09q -1.69 .001 -5.288 -2.615q -3.596 2.617 -5.288 2.616q -2.726 0 -.495 -6.8q -9.389 -6.775 2.135 -6.775h.076q 1.785 -5.516 3.574 -5.516q 1.785 0 3.574 5.516h.076q 11.525 0 2.133 6.774q 2.23 6.802 -.497 6.8" /></svg>
+                            </div>
+                            <span class="text-sm ms-2">Penilaian Ujian</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div id="overlay" class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300 z-20"></div>
+
+        <main class="flex-1 md:ml-86 p-10 pb-12">
+            <!-- Mobile Sidenav -->
+            <div class="md:hidden w-full bg-white p-4 mb-4 flex justify-between items-center">
+                <h1 class="text-xl font-bold text-gray-800">ICT Practical Exam</h1>
+                <button id="menu-button" class="text-gray-500 focus:outline-none">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8l16 0" /><path d="M4 16l16 0" /></svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="fixed top-0 left-0 w-64 h-full bg-white shadow-lg z-20 transform -translate-x-full transition-transform duration-300 ease-in-out">
+                <div class="p-4 border-b border-gray-200 flex justify-between items-center">
+                    <h2 class="text-xl font-bold">Menu</h2>
+                    <button id="close-menu" class="text-gray-500 focus:outline-none">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                    </button>
+                </div>
+                <div class="p-4">
+                    <a href="#" class="w-full text-center py-3 px-4 rounded-sm font-bold text-white shadow-lg
+                       bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700
+                       transition-colors duration-200 mb-4 block">
+                        <i class="fas fa-play-circle mr-2"></i>
+                        Mulai Ujian
+                    </a>
+                </div>
+                <nav class="flex-1 overflow-y-auto p-4">
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#overview" class="flex items-center p-3 text-gray-700 hover:bg-gray-200 rounded-sm transition-colors duration-200">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-layout-dashboard"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1" /><path d="M5 16h4a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1" /><path d="M15 12h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1" /><path d="M15 4h4a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1" /></svg>
+                                <span class="ms-2">Overview</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#mekanisme" class="flex items-center p-3 text-gray-700 hover:bg-gray-200 rounded-sm transition-colors duration-200">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-settings-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11.445 20.913a1.665 1.665 0 0 1 -1.12 -1.23a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.31 .318 1.643 1.79 .997 2.694" /><path d="M15 19l2 2l4 -4" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
+                                <span class="ms-2">Mekanisme Ujian</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-3 text-gray-700 hover:bg-gray-200 rounded-sm transition-colors duration-200">
+                                <i class="fas fa-file-upload text-xl mr-4 text-gray-500"></i>
+                                <span class="font-medium">Ketentuan File</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-3 text-gray-700 hover:bg-gray-200 rounded-sm transition-colors duration-200">
+                                <i class="fas fa-clipboard-list text-xl mr-4 text-gray-500"></i>
+                                <span class="font-medium">Persiapan Ujian Siswa</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-3 text-gray-700 hover:bg-gray-200 rounded-sm transition-colors duration-200">
+                                <i class="fas fa-gavel text-xl mr-4 text-gray-500"></i>
+                                <span class="font-medium">Tata Tertib</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-3 text-gray-700 hover:bg-gray-200 rounded-sm transition-colors duration-200">
+                                <i class="fas fa-star-half-alt text-xl mr-4 text-gray-500"></i>
+                                <span class="font-medium">Penilaian</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- End Mobile Sidenav -->
+
+            <!-- Main Content -->
+            <div class="bg-gradient-to-r from-cyan-500 to-blue-500 text-center py-16 rounded-2xl mb-6">
+                <h1 class="text-4xl font-extrabold text-gray-800 mb-6 text-white">Selamat Datang di <br> Halaman Ujian Praktik ICT</h1>
+                <p></p>
+                <span class="px-2 py-1 bg-gray-100/30 text-white ">Durasi: 90 Menit</span>
+            </div>
+
+            <div class="flex flex-col p-4 w-full rounded-sm shadow-sm text-gray-400 bg-gray-800 mb-6">
+                <!-- Label -->
+                <div class="flex">
+                    <div class="inline-flex items-center justify-center shrink-0 w-8 h-8 rounded-sm bg-blue-800 text-blue-200">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-target"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 12m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /></svg>
+                    </div>
+
+                    <h5 class="ms-3 text-lg font-semibold text-white">Tujuan</h5>
+                </div>
+                <p class="text-white text-sm">Ujian praktik ini bertujuan untuk menguji kemampuan teknis dan problem solving siswa dalam merancang dan membuat tampilan website menggunakan HTML dan Tailwind CSS.</p>
+            </div>
+
+            <!-- Container Informasi -->
+            <div class="bg-white py-8 px-6 rounded-sm mb-10">
+                <!-- 1 -->
+                <div id="overview" class="mb-10 scroll-mt-5">
+                    <div class="flex mb-4">
+                        <div class="inline-flex items-center justify-center shrink-0 w-8 h-8 rounded-sm bg-blue-100 text-blue-500">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-device-desktop-code"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12.5 16h-8.5a1 1 0 0 1 -1 -1v-10a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v8" /><path d="M7 20h4" /><path d="M9 16v4" /><path d="M20 21l2 -2l-2 -2" /><path d="M17 17l-2 2l2 2" /></svg>                       
+                        </div>
+                        <h5 class="ms-3 text-xl font-semibold">Pengerjaan Ujian ICT</h5>
+                    </div>
+    
+                    <div class="flex gap-4 text-sm">
+                        <div class="border border-gray-400 p-4 rounded-sm">
+                            <h5 class="font-semibold text-base">Detail Ujian</h5>
+                            <p><span class="font-bold">Durasi</span>: 90 Menit (1 Jam 30 Menit)</p>
+                            <p class="text-sm">termasuk pengumpulan ke drive (link drive akan disampaikan pengawas saat ujian berlangsung)</p>
+                        </div>
+                        <div class="border border-gray-400 p-4 rounded-sm">
+                            <h5 class="font-semibold">Detail Ujian</h5>
+                            <p><span class="font-bold">Durasi</span>: 90 Menit (1 Jam 30 Menit)</p>
+                            <p class="text-sm">termasuk pengumpulan ke drive (link drive akan disampaikan pengawas saat ujian berlangsung)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div id="mekanisme" class="mb-10 scroll-mt-5">
+                    <div class="flex mb-4">
+                        <div class="inline-flex items-center justify-center shrink-0 w-8 h-8 rounded-sm bg-blue-100 text-blue-500">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-settings-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11.445 20.913a1.665 1.665 0 0 1 -1.12 -1.23a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.31 .318 1.643 1.79 .997 2.694" /><path d="M15 19l2 2l4 -4" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>                    
+                        </div>
+                        <h5 class="ms-3 text-xl font-semibold">Mekanisme Ujian</h5>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-sm p-4">
+                        <p class="mb-2.5">Berikut adalah mekanisme dalam ujian praktik ICT</p>
+                        <ul class="list-disc marker:text-blue-500 ms-8 space-y-2">
+                            <li>Siswa mengerjakan soal ujian yang berupa studi kasus.</li>
+                            <li>Siswa menggunakan laptop pribadi masing-masing yang sudah dilengkapi dengan aplikasi code editor (Seperti VSCode atau sejenisnya).</li>
+                            <li class="marker:text-red-500">Selama ujian, Siswa <b>boleh</b> mencari referensi melalui internet, buku, dan catatan. <b>Tidak boleh</b> membuka kodingan sebelumnya</li>
+                            <li>Penilaian akan didasarkan pada kelengkapan elemen, kualitas kode, styling, dan manajemen waktu.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div id="ketentuan-file" class="mb-10 scroll-mt-5">
+                    <div class="flex mb-4">
+                        <div class="inline-flex items-center justify-center shrink-0 w-8 h-8 rounded-sm bg-blue-100 text-blue-500">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-code"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M10 13l-1 2l1 2" /><path d="M14 13l1 2l-1 2" /></svg>                 
+                        </div>
+                        <h5 class="ms-3 text-xl font-semibold">Ketentuan File Ujian yang Diunggah</h5>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-sm p-4">
+                        <p class="mb-2.5">File proyek yang harus diunggah meliputi:</p>
+                        <ul class="list-disc marker:text-blue-500 ms-8 space-y-2">
+                            <li>File HTML utama (*.html)</li>
+                            <li>Asset gambar (jika ada)</li>
+                            <li>Struktur folder yang rapi dan terorganisir.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div id="aturan-penting" class="mb-10 scroll-mt-5">
+                    <div class="flex mb-4">
+                        <div class="inline-flex items-center justify-center shrink-0 w-8 h-8 rounded-sm bg-blue-100 text-blue-500">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-alert-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 8v4" /><path d="M12 16h.01" /></svg>                 
+                        </div>
+                        <h5 class="ms-3 text-xl font-semibold">Aturan Penting</h5>
+                    </div>
+
+                    <div class="bg-red-200 rounded-sm p-4">
+                        <div class="flex mb-4">
+                            <div class="inline-flex items-center justify-center shrink-0 text-red-500">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-ban"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M5.7 5.7l12.6 12.6" /></svg>
+                            </div>
+                            <h5 class="ms-3 font-semibold">DILARANG KERAS</h5>
+                        </div>
+                        <ul class="list-disc marker:text-blue-500 ms-8 space-y-2">
+                            <li>Menggunakan bantuan AI generatif (ChatGPT, Copilot, dll.)</li>
+                            <li>Menggunakan joki (pengerjaan oleh pihak lain)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="mb-10 scroll-mt-5 flex gap-4">
+                    <div class="border border-gray-300 p-5 rounded-sm">
+                        <div id="persiapan-ujian" class="flex mb-4 scroll-mt-5">
+                            <div class="inline-flex items-center justify-center shrink-0 w-8 h-8 rounded-sm bg-blue-100 text-blue-500">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-devices"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 9a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1v-10z" /><path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9" /><path d="M16 9h2" /></svg>           
+                            </div>
+                            <h5 class="ms-3 text-xl font-semibold">Persiapan Peserta</h5>
+                        </div>
+
+                        <div>
+                            <!-- Point 1 -->
+                            <div class="mb-2.5">
+                                <div class="flex mb-2">
+                                    <div class="text-blue-600">
+                                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-device-laptop"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 19l18 0" /><path d="M5 6m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v8a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z" /></svg>           
+                                    </div>
+                                    <h6 class="ms-1 text-base font-semibold text-blue-600">1. Perangkat</h6>
+                                </div>
+                                <p>Pastikan memiliki laptop dengan spesifikasi yang memadai.</p>
+                            </div>
+
+                            <!-- Point 2 -->
+                            <div class="mb-2.5">
+                                <div class="flex mb-2">
+                                    <div class="text-blue-600">
+                                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-wifi"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 18l.01 0" /><path d="M9.172 15.172a4 4 0 0 1 5.656 0" /><path d="M6.343 12.343a8 8 0 0 1 11.314 0" /><path d="M3.515 9.515c4.686 -4.687 12.284 -4.687 17 0" /></svg>           
+                                    </div>
+                                    <h6 class="ms-1 text-base font-semibold text-blue-600">2. Koneksi Internet</h6>
+                                </div>
+                                <p>Pastikan koneksi internet stabil untuk menghindari kendala selama ujian.</p>
+                            </div>
+
+                            <!-- Point 3 -->
+                            <div class="mb-2.5">
+                                <div class="flex mb-2">
+                                    <div class="text-blue-600">
+                                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-settings"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>           
+                                    </div>
+                                    <h6 class="ms-1 text-base font-semibold text-blue-600">3. Aplikasi/Software</h6>
+                                </div>
+                                <p>Pastikan sudah menginstal semua aplikasi/software yang diperlukan sesuai dengan materi pemrograman web.</p>
+                            </div>
+
+                            <!-- Point 4 -->
+                            <div class="mb-2.5">
+                                <div class="flex mb-2">
+                                    <div class="text-blue-600">
+                                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brain"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15.5 13a3.5 3.5 0 0 0 -3.5 3.5v1a3.5 3.5 0 0 0 7 0v-1.8" /><path d="M8.5 13a3.5 3.5 0 0 1 3.5 3.5v1a3.5 3.5 0 0 1 -7 0v-1.8" /><path d="M17.5 16a3.5 3.5 0 0 0 0 -7h-.5" /><path d="M19 9.3v-2.8a3.5 3.5 0 0 0 -7 0" /><path d="M6.5 16a3.5 3.5 0 0 1 0 -7h.5" /><path d="M5 9.3v-2.8a3.5 3.5 0 0 1 7 0v10" /></svg>           
+                                    </div>
+                                    <h6 class="ms-1 text-base font-semibold text-blue-600">4. Penguasaan Materi</h6>
+                                </div>
+                                <p>Pelajari kembali semua materi yang akan diujikan.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-300 p-5 rounded-sm">
+                        <div id="tata-tertib" class="flex scroll-mt-5">
+                            <div class="inline-flex items-center justify-center shrink-0 w-8 h-8 rounded-sm bg-blue-100 text-blue-500">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-gavel"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 10l7.383 7.418c.823 .82 .823 2.148 0 2.967a2.11 2.11 0 0 1 -2.976 0l-7.407 -7.385" /><path d="M6 9l4 4" /><path d="M13 10l-4 -4" /><path d="M3 21h7" /><path d="M6.793 15.793l-3.586 -3.586a1 1 0 0 1 0 -1.414l2.293 -2.293l.5 .5l3 -3l-.5 -.5l2.293 -2.293a1 1 0 0 1 1.414 0l3.586 3.586a1 1 0 0 1 0 1.414l-2.293 2.293l-.5 -.5l-3 3l.5 .5l-2.293 2.293a1 1 0 0 1 -1.414 0z" /></svg>           
+                            </div>
+                            <h5 class="ms-3 text-xl font-semibold">Tata Tertib Peserta</h5>
+                        </div>
+                        <div  class="p-5">
+                            <ol class="list-decimal space-y-1">
+                                <li>Siswa harus sudah berada di ruang ujian 15 menit sebelum waktu dimulai.</li>
+                                <li>Dengarkan baik-baik semua instruksi yang diberikan oleh pengawas sebelum ujian dimulai. Jika ada yang kurang jelas, tanyakan sebelum waktu pengerjaan dimulai</li>
+                                <li>DILARANG KERAS bekerja sama atau berkomunikasi dengan siswa lain dalam bentuk apa pun.</li>
+                                <li>DILARANG KERAS membuka tab lain yang tidak diizinkan atau menggunakan tools AI untuk membuat kode.</li>
+                                <li>Siswa hanya diizinkan menggunakan internet untuk dokumentasi Tailwind CSS. Selain itu, dilarang membuka situs lain seperti media sosial, YouTube, atau situs tutorial.</li>
+                                <li>Apabila terdapat kendala teknis, segera laporkan ke pengawas ujian.</li>
+                                <li>Pelanggaran terhadap tata tertib ini akan mengakibatkan pengurangan nilai</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div id="penilaian" class="mb-10 scroll-mt-5">
+                    <div class="flex mb-4">
+                        <div class="inline-flex items-center justify-center shrink-0 w-8 h-8 rounded-sm bg-blue-100 text-blue-500">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-carambola"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17.286 21.09q -1.69 .001 -5.288 -2.615q -3.596 2.617 -5.288 2.616q -2.726 0 -.495 -6.8q -9.389 -6.775 2.135 -6.775h.076q 1.785 -5.516 3.574 -5.516q 1.785 0 3.574 5.516h.076q 11.525 0 2.133 6.774q 2.23 6.802 -.497 6.8" /></svg>                 
+                        </div>
+                        <h5 class="ms-3 text-xl font-semibold">Penilaian Ujian</h5>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-sm p-4">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="bg-blue-100/50 p-6 rounded-sm">
+                                <h4 class="text-blue-500 font-medium mb-2">1. Fungsionalitas & Kelengkapan</h4>
+                                <p class="text-sm text-gray-700">Proyek berjalan sesuai instruksi & persyaratan</p>
+                            </div>
+                            <div class="bg-orange-100/50 p-6 rounded-sm">
+                                <h4 class="text-orange-500 font-medium mb-2">2. Kualitas Kode/Struktur</h4>
+                                <p class="text-sm text-gray-700">Kode HTML terstruktur rapi dengan indentasi yang konsisten. Dan Penggunaan class Tailwind efisien</p>
+                            </div>
+                            <div class="bg-rose-100/50 p-6 rounded-sm">
+                                <h4 class="text-rose-500 font-medium mb-2">3. Kreativitas dan Problem Solving</h4>
+                                <p class="text-sm text-gray-700">Kemampuan menyelesaikan masalah dan sentuhan inovasi.</p>
+                            </div>
+                            <div class="bg-purple-100/50 p-6 rounded-sm">
+                                <h4 class="text-purple-500 font-medium mb-2">4. Manajemen Waktu</h4>
+                                <p class="text-sm text-gray-700">Website selesai tepat waktu atau tidak.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const closeButton = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const overlay = document.getElementById('overlay');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('-translate-x-full');
+            overlay.classList.remove('opacity-0', 'pointer-events-none');
+            overlay.classList.add('opacity-50');
+        });
+
+        closeButton.addEventListener('click', () => {
+            mobileMenu.classList.add('-translate-x-full');
+            overlay.classList.remove('opacity-50');
+            overlay.classList.add('opacity-0', 'pointer-events-none');
+        });
+
+        overlay.addEventListener('click', () => {
+            mobileMenu.classList.add('-translate-x-full');
+            overlay.classList.remove('opacity-50');
+            overlay.classList.add('opacity-0', 'pointer-events-none');
+        });
+    </script>
+</body>
+</html>
