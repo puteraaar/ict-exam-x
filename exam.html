@@ -6,6 +6,7 @@
     <title>Guideline Ujian Praktik ICT - PSTS</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -25,7 +26,7 @@
                 <p class="text-gray-700">Selamat Mengerjakan!</p>
 
                 <div class="grid md:grid-cols-2 my-5">
-                    <div class="p-4 flex flex-col border border-gray-300">
+                    <div class="p-4 flex flex-col border border-gray-300 row-span-2">
                         <!-- icons -->
                         <div class="text-blue-500">
                             <svg  xmlns="http://www.w3.org/2000/svg"  width="28"  height="28"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-help"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 17l0 .01" /><path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4" /></svg>
@@ -41,15 +42,34 @@
                             <li>Klik link pengumpulan yang sesuai dengan unit masing-masing.</li>
                         </ol>
                     </div>
+
+                    <!-- Kisi-kisi Ujian -->
                     <div class="p-4 flex flex-col border border-gray-300 md:border-l-0 md:border-t border-t-0">
                         <!-- icons -->
                         <div class="text-blue-500">
                             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /></svg>
                         </div>
+                        <h3 class="text-xl font-medium mt-4">Kisi-kisi</h3>
+                        <p class="text-gray-700">Klik link di bawah untuk mengakses kisi-kisi ujian ICT.</p>
+                        <div class="my-6">
+                            <a href="guide.html" class="flex gap-2 items-center text-blue-500 border border-blue-500 hover:bg-blue-500 hover:text-white w-fit px-5 py-3">
+                                <span>Baca Guideline</span>
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Mulai Ujian -->
+                    <div class="p-4 flex flex-col border border-gray-300 md:border-l-0 md:border-t border-t-0">
+                        <!-- icons -->
+                        <div class="text-blue-500">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-device-laptop"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 19l18 0" /><path d="M5 6m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v8a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z" /></svg>
+                        </div>
                         <h3 class="text-xl font-medium mt-4">Kerjakan Ujian</h3>
                         <p class="text-gray-700">Klik link di bawah untuk mengakses soal ujian.</p>
                         <div class="my-6">
-                            <a href="" target="_blank">
+                            <!-- Link Ujian -->
+                            <a href="404.html" target="_blank">
                                 <div class="animate-bounce motion-reduce:animate-bounce flex gap-2 items-center text-white bg-blue-500 hover:bg-blue-600 w-fit px-5 py-3">
                                     <span>Mulai Ujian</span>
                                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>
@@ -58,32 +78,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- <div class="border border-gray-300">
-                    <div class="flex gap-2 items-center justify-center">
-                        <div class="text-blue-500">
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-cloud-up"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 18.004h-5.343c-2.572 -.004 -4.657 -2.011 -4.657 -4.487c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.38 0 2.57 .811 3.128 1.986" /><path d="M19 22v-6" /><path d="M22 19l-3 -3l-3 3" /></svg>
-                        </div>
-                        <h3 class="text-center text-xl font-medium my-4">Link Pengumpulan File Proyek</h3>
-                    </div>
-                    <div class="grid md:grid-cols-3">
-                        <div class="border border-gray-300 border-x-0 border-b-0 text-center p-4">
-                            <h3 class="text-lg font-semibold">Unit Surakarta</h3>
-                            <p class="text-gray-700 mb-6">Pengumpulan file project untuk unit Surakarta.</p>
-                            <a href="" class="py-2 px-4 bg-blue-500 inline-block text-white font-semibold w-full hover:bg-blue-600">Submit here</a>
-                        </div>
-                        <div class="border border-gray-300 border-x-0 md:border-x-1 text-center p-4">
-                            <h3 class="text-lg font-semibold">Unit Sukoharjo</h3>
-                            <p class="text-gray-700 mb-6">Pengumpulan file project untuk unit Sukoharjo.</p>
-                            <a href="" class="py-2 px-4 bg-blue-500 inline-block text-white font-semibold w-full hover:bg-blue-600">Submit here</a>
-                        </div>
-                        <div class="border border-gray-300 border-x-0 border-t-0 md:border-t-1  text-center p-4">
-                            <h3 class="text-lg font-semibold">Unit Boyolali</h3>
-                            <p class="text-gray-700 mb-6">Pengumpulan file project untuk unit Boyolali.</p>
-                            <a href="" class="py-2 px-4 bg-blue-500 inline-block text-white font-semibold w-full hover:bg-blue-600">Submit here</a>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </section>
     </main>
