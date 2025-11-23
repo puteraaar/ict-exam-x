@@ -2,9 +2,10 @@ const instructionData = [
     {id: 1, text: 'Download and open the file <b>psas-1.html</b> from the system.'},
     {id: 2, text: 'Edit and add JavaScript code according to the tasks.'},
     {id: 3, text: '<b>Do not change</b> the basic HTML structure.'},
-    {id: 4, text: 'Test the program in a web browser and make sure the program runs well.'},
-    {id: 5, text: 'Save your completed file using the naming convention <b>[PSAS_FullName_Class].html</b> (Example: PSAS_BudiSantoso_X1.html).'},
-    {id: 6, text: 'Submit your work by clicking the collection link that corresponds to your respective unit.'}            
+    {id: 4, text: 'Use the JavaScript comment format (//) to <b>explain each important line or block of JavaScript code in your own words.</b>'},
+    {id: 5, text: 'Test the program in a web browser and make sure the program runs well.'},
+    {id: 6, text: 'Save your completed file using the naming convention <b>[PSAS_FullName_Class].html</b> (Example: PSAS_BudiSantoso_X1.html).'},
+    {id: 7, text: 'Submit your work by clicking the collection link that corresponds to your respective unit.'}            
 ]
 
 const listContainer = document.getElementById('instructionList');
@@ -25,35 +26,32 @@ window.onload = generateInstructionList;
 
 
 // Overlay
-// Ambil elemen modal/overlay
-var overlay = document.getElementById("imageOverlay");
+// Dapatkan elemen yang dibutuhkan
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeBtn = document.getElementsByClassName('close-btn')[0];
+const thumbnails = document.querySelectorAll('.thumbnail');
 
-// Ambil elemen gambar di dalam overlay
-var overlayImg = document.getElementById("img01");
+// 1. Tambahkan event listener untuk setiap gambar thumbnail
+thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', function() {
+        // Ambil URL gambar besar/asli dari atribut data-large
+        const originalImageURL = this.getAttribute('data-large');
 
-/**
- * Membuka overlay dan menampilkan gambar yang diklik.
- * @param {string} imgSrc - Sumber (source) gambar yang diklik.
- */
-function openOverlay(imgSrc) {
-    // Tampilkan overlay
-    overlay.style.display = "block"; 
-    
-    // Atur sumber gambar di dalam overlay
-    overlayImg.src = imgSrc; 
+        // Muat gambar asli dan tampilkan lightbox
+        lightbox.style.display = 'block';
+        lightboxImg.src = originalImageURL;
+    });
+});
+
+// 2. Tutup lightbox saat tombol (x) diklik
+closeBtn.onclick = function() {
+    lightbox.style.display = 'none';
 }
 
-/**
- * Menutup overlay.
- */
-function closeOverlay() {
-    // Sembunyikan overlay
-    overlay.style.display = "none";
-}
-
-// Opsional: Tutup overlay jika pengguna mengklik di luar gambar overlay
+// 3. Opsional: Tutup lightbox saat mengklik di luar gambar
 window.onclick = function(event) {
-    if (event.target == overlay) {
-        closeOverlay();
+    if (event.target == lightbox) {
+        lightbox.style.display = 'none';
     }
 }

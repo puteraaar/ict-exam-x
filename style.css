@@ -18,32 +18,34 @@ code {
 
 
 /* Overlay */
-/* Gaya untuk Overlay Modal */
-.overlay {
-    /* Tersembunyi secara default */
+/* 🖼️ Pengaturan Lightbox (Overlay) */
+.lightbox {
     display: none; 
-    /* Posisi tetap (fixed) di seluruh viewport */
-    position: fixed; 
-    z-index: 1; /* Pastikan di atas elemen lain */
-    padding-top: 60px; /* Jarak dari atas */
+    position: fixed;
+    z-index: 1000; 
     left: 0;
     top: 0;
-    width: 100%; /* Lebar penuh */
-    height: 100%; /* Tinggi penuh */
-    overflow: auto; /* Mengaktifkan scrolling jika konten terlalu besar */
-    background-color: rgb(0,0,0); /* Warna hitam */
-    background-color: rgba(0,0,0,0.9); /* Hitam dengan transparansi */
+    width: 100%;
+    height: 100%;
+    /* Latar belakang gelap transparan */
+    background-color: rgba(0,0,0,0.9);
+    /* PENTING: Scrollbar akan muncul jika gambar melebihi ukuran layar */
+    overflow: auto; 
+    text-align: center; /* Untuk memusatkan gambar */
 }
 
-/* Konten di dalam Overlay (Gambar) */
-.overlay-content {
-    margin: auto;
+/* 🖼️ Pengaturan Gambar di Dalam Lightbox */
+.lightbox-content {
+    /* PENTING: Hapus max-width/max-height yang membatasi ukuran gambar */
+    /* Gambar akan dirender dalam ukuran aslinya jika ukurannya muat di layar. */
+    /* Jika gambar lebih besar dari layar, overflow: auto di atas yang akan menangani */
     display: block;
-    width: 80%;
-    max-width: 700px;
+    margin: 50px auto; /* Memberi jarak dari atas dan bawah */
+    max-width: 50vw;
+    /* Tambahkan max-width: 95vw; jika kamu tetap ingin sedikit batasan pada layar sangat kecil */
 }
 
-/* Tombol Tutup (Close Button) */
+/* ❌ Tombol Tutup */
 .close-btn {
     position: absolute;
     top: 15px;
@@ -51,12 +53,10 @@ code {
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
-    transition: 0.3s;
+    cursor: pointer;
+    z-index: 1001; /* Pastikan di atas overlay */
 }
 
-.close-btn:hover,
-.close-btn:focus {
+.close-btn:hover {
     color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
 }
