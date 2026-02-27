@@ -1,11 +1,23 @@
 const instructionData = [
-    {id: 1, text: 'Download and open the file <b>psas-1.html</b> from the system.'},
-    {id: 2, text: 'Edit and add JavaScript code according to the tasks.'},
-    {id: 3, text: '<b>Do not change</b> the basic HTML structure.'},
-    {id: 4, text: 'Use the JavaScript comment format (//) to <b>explain each important line or block of JavaScript code in your own words.</b>'},
-    {id: 5, text: 'Test the program in a web browser and make sure the program runs well.'},
-    {id: 6, text: 'Save your completed file using the naming convention <b>[PSAS_FullName_Class].html</b> (Example: PSAS_BudiSantoso_X1.html).'},
-    {id: 7, text: 'Submit your work by clicking the collection link that corresponds to your respective unit.'}            
+    {id: 1, text: 'Create a project folder in <b>htdocs</b> named <b>PSTS2_FullName_Class</b>.'},
+    {id: 2, text: 'Download and save the <b>index.php</b> file provided by the exam committee into the project folder in htdocs.'},
+    {id: 3, text: 'Create a MySQL database and build the required table.'},
+    {id: 4, text: 'Test the program in a web browser and make sure the program runs well.'},
+    {id: 5, text: `Before finishing, you <b>must export</b> your database so the teacher can check your work:
+        <ol class="list-disc space-y-1 ms-8">
+        <li>Open phpMyAdmin (<code>localhost/phpmyadmin/</code>) and select your database (db_cash_yourname).</li>
+        <li>Click the "Export" tab at the top.</li>
+        <li>Keep the format as SQL, then click "Export" or "Go".</li>
+        <li>Move the downloaded .sql file into your project folder.</li>
+        </ol>
+        `},
+    {id: 6, text: `<b>Final Submission:</b>
+        <ol class="list-disc space-y-1 ms-8">
+        <li>Ensure your folder contains: All PHP files (index, connection, process, edit, etc.) and the .sql database file.</li>
+        <li>Convert your project folder into a ZIP or RAR file.</li>
+        <li>Upload the .zip or .rar  file to the submission link provided by the teacher.</li>
+        </ol>
+        `}            
 ]
 
 const listContainer = document.getElementById('instructionList');

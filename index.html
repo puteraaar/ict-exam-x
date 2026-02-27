@@ -169,7 +169,8 @@
 
                     <h5 class="ms-3 text-lg font-semibold text-white">Tujuan</h5>
                 </div>
-                <p class="text-white text-base md:ms-3 ms-0 md:text-left text-center">Ujian praktik ini bertujuan untuk menguji kemampuan teknis dan problem solving siswa dalam merancang dan membuat fungsionalitas aplikasi web interaktif menggunakan JavaScript untuk memproses data, menerapkan logika bisnis (perhitungan dan penentuan grade), serta memanipulasi Document Object Model (DOM).</p>
+                <!-- Tujuan Ujian Praktik -->
+                <p class="text-white text-base md:ms-3 ms-0 md:text-left text-center">Ujian praktik ini bertujuan untuk menguji kemampuan teknis dan problem solving siswa dalam membangun aplikasi web dinamis berbasis PHP dan MySQL, mencakup perancangan struktur database, implementasi konektivitas data, serta pengembangan fungsionalitas CRUD (Create, Read, Update, Delete) untuk mengelola data secara persisten dan terstruktur.</p>
             </div>
 
             <!-- Container Informasi -->
@@ -210,7 +211,7 @@
                         <ul class="list-disc marker:text-blue-500 ms-8 space-y-2">
                             <li>Siswa mengerjakan soal ujian yang berupa studi kasus.</li>
                             <li>Siswa menggunakan laptop pribadi masing-masing yang sudah dilengkapi dengan aplikasi code editor (Seperti VSCode atau sejenisnya).</li>
-                            <li class="marker:text-red-500">Selama ujian, Siswa <b>boleh</b> mencari referensi melalui internet, buku, dan catatan. <b class="text-red-600">Tidak boleh</b> membuka kodingan sebelumnya</li>
+                            <li>Selama ujian, Siswa <b>boleh</b> mencari referensi melalui internet, buku, dan catatan. <b class="text-blue-600">Boleh</b> membuka kodingan sebelumnya</li>
                             <li>Penilaian akan didasarkan pada kelengkapan elemen, kualitas kode, styling, dan manajemen waktu.</li>
                         </ul>
                     </div>
@@ -226,11 +227,22 @@
                     </div>
 
                     <div class="bg-gray-50 rounded-sm p-4">
-                        <p class="mb-2.5">File proyek yang harus diunggah adalah:</p>
+                        <p class="mb-2.5">Semua file proyek harus diorganisir dalam satu folder utama dengan format penamaan: <code>PSTS2_FullName_Class</code> (Contoh: <code>PSTS2_Putera Islamiyadi_X1</code> ). Di dalam folder tersebut wajib berisi:</p>
                         <ul class="list-disc marker:text-blue-500 ms-8 space-y-2">
-                            <li>File HTML utama (*.html)</li>
-                            <p>yang telah didownload sebelumnya dan direname dengan format:</p>
-                            <p><b>[PSAS_FullName_Class].html</b> (Example: PSAS_BudiSantoso_X1.html).</p>
+                            <li>File PHP (*.php):</li>
+                            <ul class="list-disc marker:text-blue-500 ms-8 space-y-2">
+                                <li>index.php</li>
+                                <li>connection.php</li>
+                                <li>process.php</li>
+                                <li>edit.php</li>
+                                <li>dll.</li>
+                            </ul>
+                            <li>File Database berformat (*.sql)</li>
+                            <p class="text-sm">Note: Cara Export Database menggunakan PHPMyAdmin bisa dilihat di YouTube</p>
+                        </ul>
+                        <p class="my-2.5">Folder proyek harus dikompres menjadi satu file arsip sebelum diunggah:</p>
+                        <ul class="list-disc marker:text-blue-500 ms-8 space-y-2">
+                            <li>Format: .zip atau .rar.</li>
                         </ul>
                     </div>
                 </div>
@@ -252,8 +264,9 @@
                             <h5 class="ms-3 font-semibold">DILARANG KERAS</h5>
                         </div>
                         <ul class="list-disc marker:text-blue-500 ms-8 space-y-2">
-                            <li>Menggunakan bantuan AI generatif (ChatGPT, Copilot, dll.)</li>
-                            <li>Menggunakan joki (pengerjaan oleh pihak lain)</li>
+                            <li>menyalin (copy-paste) kode sumber secara utuh dari internet atau hasil generasi AI tanpa memahami logikanya.</li>
+                            <li>menggunakan joki (pengerjaan oleh pihak lain)</li>
+                            <li>bekerja sama, berdiskusi, atau berkomunikasi dengan siswa lain dalam bentuk apa pun selama ujian berlangsung.</li>
                         </ul>
                     </div>
                 </div>
@@ -326,23 +339,21 @@
                         <div  class="p-5">
                             <ol class="list-decimal space-y-1">
                                 <li>Siswa harus sudah berada di ruang ujian 15 menit sebelum waktu dimulai.</li>
-                                <li>Dengarkan baik-baik semua instruksi yang diberikan oleh pengawas sebelum ujian dimulai. Jika ada yang kurang jelas, tanyakan sebelum waktu pengerjaan dimulai</li>
+                                <li>Dengarkan dengan saksama semua instruksi pengawas. Jika ada hal yang kurang jelas, tanyakan sebelum waktu pengerjaan dimulai.</li>
                                 <li><b>DILARANG KERAS</b> bekerja sama atau berkomunikasi dengan siswa lain dalam bentuk apa pun.</li>
-                                <li><b>DILARANG KERAS</b> membuka tab lain yang tidak diizinkan atau menggunakan tools AI untuk membuat kode.</li>
+                                <li>Penggunaan alat bantu AI (seperti ChatGPT, Gemini, dll.) diperbolehkan hanya sebagai asisten referensi.</li>
                                 
                                 <ol>
-                                    <li>Website yang diijinkan:</li>
+                                    <li class="font-bold">DIIZINKAN:</li>
                                     <ul class="ms-6 list-disc">
-                                        <li>Website Dokumentasi HTML dan Tailwind (e.g. W3schools dan Tailwindcss)</li>
+                                        <li>Menggunakan AI untuk menanyakan konsep, penjelasan fungsi, atau membantu mencari letak kesalahan (debugging) pada kode yang telah dibuat sendiri.</li>
                                     </ul>
-                                    <li class="mt-2.5">Website yang tidak ijinkan:</li>
+                                    <li class="mt-2.5 font-bold">DILARANG:</li>
                                     <ul class="ms-6 list-disc">
-                                        <li>Website tools AI (e.g. ChatGPT, Grok, Gemini, dll.)</li>
-                                        <li>Website Tutorial</li>
-                                        <li>Website yang disebutkan di poin 5</li>
+                                        <li>Menggunakan AI untuk menggenerasi keseluruhan struktur aplikasi, logika CRUD utuh, atau file database secara instan.</li>
                                     </ul>
                                 </ol>
-                                <li>Siswa hanya diizinkan menggunakan internet untuk dokumentasi HTML dan Tailwind CSS. Selain itu, <b>dilarang membuka</b> situs lain seperti media sosial, YouTube, atau situs generatif AI lainnya</li>
+                                <li>Siswa hanya diizinkan menggunakan internet untuk dokumentasi HTML, Tailwind CSS, dan Platform AI. Selain itu, <b>dilarang membuka</b> situs lain seperti media sosial, YouTube atau situs tutorial yang menyediakan source code proyek jadi.</li>
                                 <li>Apabila terdapat kendala teknis, segera laporkan ke pengawas ujian.</li>
                                 <li>Pelanggaran terhadap tata tertib ini akan mengakibatkan pengurangan nilai</li>
                             </ol>

@@ -23,7 +23,7 @@
         <section class="py-10">
             <div class="max-w-4xl mx-auto p-4">
                 <h1 class="text-2xl font-bold mb-2">Practical Exam Guideline</h1>
-                <p class="text-gray-700">Pengembangan Web Interaktif dengan JavaScript</p>
+                <p class="text-gray-700">Pengembangan Web Dinamis Menggunakan PHP MySQL</p>
 
                 <div class="mt-6">
                     <div class="overflow-x-auto">
@@ -56,64 +56,58 @@
         const rawKisiKisiData = [
             {
                 no: 1,
-                kompetensi: "Analisis dan Persiapan Kode",
-                materi: "Analisis Struktur Dasar HTML dan JavaScript.",
-                indikator: "Siswa dapat menganalisis struktur dasar file praktik (HTML, variabel, loop, dan HTML ID) yang akan dimodifikasi dalam tugas.",
+                kompetensi: "Menerapkan struktur basis data dan manajemen data MySQL.",
+                materi: "Database Management.",
+                indikator: "Siswa mampu membuat database, tabel dengan tipe data yang sesuai (INT, VARCHAR, DATE), serta menentukan Primary Key serta Auto Increment.",
             },
             {
                 no: 2,
-                kompetensi: "Manipulasi Data (Array)",
-                materi: "Pembuatan dan manipulasi Array of Objects",
-                indikator: "Siswa dapat membuat dan mengisi JavaScript object array (data master) sesuai kebutuhan studi kasus.",
+                kompetensi: "Mengintegrasikan aplikasi web dengan database menggunakan PHP.",
+                materi: "Database Connectivity",
+                indikator: "Siswa mampu membangun koneksi antara file PHP dan MySQL menggunakan fungsi mysqli_connect().",
             },
             {
                 no: 3,
-                kompetensi: "Pencarian Data dan Input",
-                materi: "Manipulasi DOM dan Looping (for loop).",
-                indikator: "Siswa dapat mengambil nilai dari elemen input (seperti skor atau data lain) dan mencari data terkait dari array master menggunakan for loop dan kunci pencarian yang sesuai.",
+                kompetensi: "Mengelola manipulasi data pada aplikasi web (Full CRUD).",
+                materi: "CRUD Operations",
+                indikator: "Siswa mampu membuat form input HTML dan menggunakan query INSERT INTO untuk menyimpan data ke database.",
+            },
+            {
+                no: 3,
+                kompetensi: "Mengelola manipulasi data pada aplikasi web (Full CRUD).",
+                materi: "CRUD Operations",
+                indikator: "Siswa mampu mengambil data dari database menggunakan query SELECT dan menampilkannya ke tabel HTML menggunakan perulangan while.",
+            },
+            {
+                no: 3,
+                kompetensi: "Mengelola manipulasi data pada aplikasi web (Full CRUD).",
+                materi: "CRUD Operations",
+                indikator: "Siswa mampu mengambil data spesifik berdasarkan ID, menampilkannya kembali pada form, dan menyimpannya menggunakan query UPDATE.",
+            },
+            {
+                no: 3,
+                kompetensi: "Mengelola manipulasi data pada aplikasi web (Full CRUD).",
+                materi: "CRUD Operations",
+                indikator: "Siswa mampu menghapus record data tertentu dari database berdasarkan ID yang dikirim melalui URL (GET).",
             },
             {
                 no: 4,
-                kompetensi: "Perhitungan",
-                materi: "Implementasi rumus matematika dasar.",
-                indikator: "Siswa dapat menghitung nilai keluaran (misalnya Rata-rata/Total) menggunakan rumus matematika yang ditetapkan dalam tugas.",
+                kompetensi: "Mengimplementasikan logika pemrograman dan fungsi agregasi.",
+                materi: "Backend Logic & SQL Aggregation.",
+                indikator: "Siswa mampu menggunakan fungsi SUM() pada SQL dan menerapkan logika kondisi if...else di PHP untuk perhitungan otomatis.",
             },
             {
                 no: 5,
-                kompetensi: "Struktur Kontrol",
-                materi: "Penggunaan if...else if...else untuk logika penentuan kondisi.",
-                indikator: "Siswa dapat menentukan kategori kondisi (misalnya Grade, Status, Predikat) menggunakan struktur if...else if...else berdasarkan kriteria perhitungan.",
+                kompetensi: "Merancang antarmuka pengguna yang responsif dan estetis.",
+                materi: "Tailwind CSS.",
+                indikator: "Siswa mampu mengimplementasikan utility classes Tailwind CSS v4 untuk membuat desain tabel, form, dan indikator warna yang informatif.",
             },
             {
                 no: 6,
-                kompetensi: "Output dan Styling (DOM)",
-                materi: "Manipulasi DOM Tingkat Lanjut (Dropdown Dinamis).",
-                indikator: "Siswa dapat membuat dropdown list secara dinamis menggunakan metode document.createElement dan forEach (atau loop lainnya), lalu menambahkannya ke elemen HTML (append() atau add()) berdasarkan data master.",
-            },
-            {
-                no: 7,
-                kompetensi: "Output dan Styling (DOM)",
-                materi: "Manipulasi DOM (menampilkan teks dan mengubah atribut class).",
-                indikator: "1. Siswa dapat menampilkan hasil teks kondisi (misalnya Grade) pada elemen output yang ditentukan.",
-            },
-            {
-                no: 7,
-                kompetensi: "Output dan Styling (DOM)",
-                materi: "Manipulasi DOM (menampilkan teks dan mengubah atribut class).",
-                indikator: "2. Siswa dapat menerapkan styling class (misalnya warna/latar belakang) secara dinamis pada elemen output berdasarkan hasil kondisi.",
-            },
-            {
-                no: 7,
-                kompetensi: "Output dan Styling (DOM)",
-                materi: "Manipulasi DOM (menampilkan teks dan mengubah atribut class).",
-                indikator: "3. Siswa dapat memodifikasi dan menampilkan elemen informasi lain (data yang dicari dan data input) agar ditampilkan dengan benar.",
-            },
-            {
-                no: 8,
-                kompetensi: "Validasi (Poin Bonus/Challenge)",
-                materi: "Struktur kontrol (if) dan fungsi alert() untuk validasi data.",
-                indikator: "Siswa dapat menambahkan validasi untuk menampilkan pesan kesalahan (alert()) jika input tidak valid (misalnya kosong atau di luar rentang yang ditentukan).",
-            },
+                kompetensi: "Melakukan pengelolaan proyek",
+                materi: "Project Deployment.",
+                indikator: "Siswa mampu mengekspor database ke format .sql.",
+            }
         ];
 
         document.addEventListener('DOMContentLoaded', () => {
